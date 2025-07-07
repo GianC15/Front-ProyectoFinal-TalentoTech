@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Pedidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<header>
+    <div id="div-logo-header">
+        <img src="/assets/img/logo.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link link" href="/index.html"><img src="/assets/img/home.png" class="icono-nav-home" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container mt-4 wrapper">
+        <h2 class="text-center mb-4 d-flex justify-content-center align-items-center gap-2">
+            <img src="/assets/img/box.png" alt="icono" alt="icono" width="42" height="42">
+            Gestión de Pedidos
+            <img src="/assets/img/box.png" alt="icono" alt="icono" width="42" height="42">
+        </h2>
+
+        <form id="form-pedido" class="mb-4">
+            <input type="hidden" id="idPedido">
+            <div class="mb-3">
+                <label for="dniCliente" class="form-label">Dni del Cliente</label>
+                <input type="text" class="form-control" id="dniCliente" required>
+            </div>
+            <div class="mb-3">
+                <label for="total" class="form-label">Total</label>
+                <input type="number" class="form-control" id="total" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-secondary" id="cancelar">Cancelar</button>
+        </form>
+        
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>DNI Cliente</th>
+                    <th>Total</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-pedido"></tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2025 Gian Castro Colicigno</p>
+        <div id="div-gral-footer">
+            <div id="div-social-icons">
+                <a href="https://github.com/GianC15" target="_blank" class="btn-red"><img src="/assets/img/github.gif"
+                        alt="GitHub"></a>
+                </a>
+                <a href="https://github.com/GianC15" target="_blank" class="btn-red"><img src="/assets/img/linkedin.gif"
+                        alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/pedidos.js"></script>
+</body>
+
+</html>

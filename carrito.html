@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<header>
+    <div id="div-logo-header">
+        <img src="/assets/img/logo.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link link" href="/index.html"><img src="/assets/img/home.png" class="icono-nav-home" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h2 class="text-center mb-4" id="title-carrito"><img src="/assets/img/carrito.png" alt="icono" width="42" height="42"> Carrito <img src="/assets/img/carrito.png" alt="icono" width="42" height="42"></h2>
+    <div class="container-articles-carrito">
+        <div id="lista-carrito"></div>
+    </div>
+    <div class="container mt-4 wrapper">
+        <!--Que se ubique a la derecha-->
+            <div class="col-md-12 text-center ">
+                <button id="vaciar-carrito" class="btn-delete-carrito">Vaciar carrito</button>
+            </div>
+            <div class="col-md-12 text-center margin-top">
+                <h4>Total: <span id="total" class="text-success">$0.00</span></h4>
+                <button id="comprar" class="btn btn-success mt-2">
+                    <i class="bi bi-credit-card"></i> Finalizar compra
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form d-none">
+        <h4>Formulario con datos del pedido </h4>
+        <form action="" id="form-pedido">
+            <input type="hidden" id="idPedido">
+            <div class="mb-3">
+                <label for="idPedido" class="form-label d-none">ID</label>
+                <input type="text" class="form-control d-none" id="idPedido"></label>
+            </div>
+            <div class="mb-3">
+                <label for="dniCliente" class="form-label">Dni del Cliente</label>
+                <input type="text" class="form-control" id="dniCliente" required>
+            </div>
+            <div class="mb-3">
+                <label for="total" class="form-label">Total</label>
+                <input type="number" class="form-control" id="total-pedido" readonly>
+            </div>
+            <button type="submit" class="btn-realizar-pedido id="realizar-pedido">Realizar Pedido</button>
+            <button type="button" class="btn-cancelar-pedido" id="cancelar">Cancelar</button>
+        </form>
+    </div>
+
+    <!-- Modal Personalizado -->
+    <div class="modal fade" id="customAlertModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-4">
+                    <h5 id="alertMessage">¡Artículo agregado al carrito!</h5>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gian Castro Colicigno</p>
+        <div id="div-gral-footer">
+            <div id="div-social-icons">
+                <a href="https://github.com/GianC15" target="_blank" class="btn-red"><img src="/assets/img/github.gif"
+                        alt="GitHub"></a>
+                </a>
+                <a href="https://github.com/GianC15" target="_blank" class="btn-red"><img src="/assets/img/linkedin.gif"
+                        alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>

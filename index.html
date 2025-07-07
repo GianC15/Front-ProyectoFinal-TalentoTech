@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<header>
+    <div id="div-logo-header">
+        <img src="/assets/img/logo.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link link" href="/crud.html">CRUD´S</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link position-relative" href="/pedidos.html">
+                    <img src="/assets/img/pedido.png" class="icono-nav-pedido" alt="Carrito">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link position-relative" href="/carrito.html">
+                    <img src="/assets/img/carrito-vacio.png" class="icono-nav-carrito" alt="Carrito">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container mt-4 wrapper">
+        <h1 class="text-center mb-4">Proyecto Final - Talento Tech 2025 - Back End JS</h1>
+        <p class="text-center parrafo">Mi nombre es Gian Castro Colicigno y te doy la bienvenida a mi proyecto final del
+            curso de Backend JS de Talento Tech. </p>
+        <div class="container-gral">
+            <!-- container donde van a estar todos los articulos -->
+            <div class="container-articles">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gian Castro Colicigno</p>
+        <div id="div-gral-footer">
+            <div id="div-social-icons">
+                <a href="https://github.com/GianC15" target="_blank" class="btn-red"><img src="/assets/img/github.gif"
+                        alt="GitHub"></a>
+                </a>
+                <a href="https://github.com/GianC15" target="_blank" class="btn-red"><img src="/assets/img/linkedin.gif"
+                        alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Personalizado -->
+    <div class="modal fade" id="customAlertModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-4">
+                    <h5 id="alertMessage">¡Artículo agregado al carrito!</h5>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fondo difuminado (se activará con JavaScript) -->
+    <div id="modalBackdrop" class="modal-backdrop-blur"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tienda.js"></script>
+</body>
+
+</html>

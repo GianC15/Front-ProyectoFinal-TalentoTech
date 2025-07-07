@@ -1,0 +1,470 @@
+/*Selectores etiquetas HTML*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #c2c6c9;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #393232;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+}
+
+nav ul li a img{
+    width: 40px;
+}
+
+footer{
+    background-color: #232324;
+    bottom: 0;
+    width: 100%;
+    font-family: "Anton", sans-serif;
+    margin-top: 10px;
+    position: relative;
+}
+
+footer p {
+    margin: 0px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff8f8;
+    text-align: center;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+h2 i {
+    font-size: 2.5rem;
+    color: #25702b;
+}
+
+tr{
+   text-align: center; 
+}
+
+/*Fin de selectores para etiquetas HTML*/
+
+/*Selectores para IDS*/
+#div-logo-header {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+#div-logo-header img {
+    height: 50px;
+}
+#div-gral-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#div-social-icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+#div-social-icons a img {
+    text-decoration: none;
+    color: #393232;
+    width: 30;
+}
+#form-articulo{
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#lista-carrito{
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+}
+#title-carrito{
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 0 4px 8px rgba(167, 4, 4, 0.2);
+    margin-top: 20px;
+}
+/*Fin de selectores para IDS*/
+
+/*Selectores para Clases*/
+
+/*Botones*/
+.btn-realizar-pedido{
+    position: relative;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #25702b;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-cancelar-pedido{
+    position: relative;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #be4b51;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-delete-carrito{
+   position: relative;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #be4b51;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.btn-red img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 50%; /* Opcional, para estilo redondeado */
+}
+.btn-page{
+    align-items: center;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #25702b;
+}
+
+.btn-carrito {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.carrito-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url('/assets/img/carrito-add.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Container*/
+.container-form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.cart-dot {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: 2px solid #fff; /* Borde blanco para mejor contraste */
+}
+
+.link{
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 1.4rem;
+    font-family: "Anton", sans-serif;
+    padding: 10px 15px;
+}
+.container-gral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-site{
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-site h2{
+    font-family: "Bowlby One SC", sans-serif;
+    font-size: 2.5rem;
+    color: #393232;
+    margin-bottom: 20px;
+}
+
+.container-site p {
+    font-family: "Reddit Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #393232;
+}
+
+.container-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: clamp(10px, 2vw, 25px);
+    padding: clamp(10px, 2vw, 25px);
+    max-width: 1200px;
+    margin: 30px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    width: calc(100% - 40px); /* Previene overflow en pantallas pequeñas */
+}
+
+.container-articles-carrito{
+    text-align: center;
+    gap: 25px;
+    padding: 25px;
+    max-width: 30%;
+    margin: 30px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+}
+
+/*Cards*/
+.card-article-carrito{
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    break-inside: avoid; /* Evita que las tarjetas se corten entre columnas */
+}
+
+.card-article-carrito img {
+    max-width: 100%;
+    width: 40%;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-article {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    break-inside: avoid; /* Evita que las tarjetas se corten entre columnas */
+}
+
+.card-article h3{ 
+    font-size: 1.5rem;
+    font-family: "Bowlby One SC", sans-serif;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-article p{
+    font-size: 1.2rem;
+    font-family: "Bowlby One SC", sans-serif;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-article img {
+    max-width: 100%;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Otras Clases*/
+.margin-top{
+    margin-top: 20px;
+}
+
+
+/* Ajuste para alinear el icono y texto */
+.nav-link i {
+    margin-right: 5px;
+}
+
+.wrapper {
+    min-height: calc(100vh - 100px); /* 100px = altura del footer */
+}
+
+.parrafo{ 
+    font-size: 1.5rem;
+    font-family: "Bowlby One SC", sans-serif;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el fondo difuminado */
+.modal-backdrop-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1040; /* Por debajo del modal pero encima de todo lo demás */
+  display: none;
+}
+
+/* Asegúrate que el modal esté encima del backdrop */
+.modal {
+  z-index: 1050;
+}
+
+.p-carrito{
+    font-size: 1.4rem;
+    font-family: "Bowlby One SC", sans-serif;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Fin de selectores para Clases*/
+
+/*Todos los Hovers */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn-page:hover {
+    background-color: #22902b;
+    transform: scale(1.05);
+}
+
+
+footer a:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.container-site:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container-site:hover h2 {
+    color: #7c7c7e;
+}
+
+#div-logo-header img:hover{
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+h2 img:hover{
+    transform: scale(1.1);
+    transform: translateY(-8px) scale(1.02);
+}
+
+.btn-delete-carrito:hover{
+    transform: scale(1.1);
+    background-color: #d6373f;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cancelar-pedido:hover{
+    transform: scale(1.1);
+    background-color: #d6373f;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-realizar-pedido:hover{
+    transform: scale(1.1);
+    background-color: #0d5f06;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.icono-nav-carrito:hover{
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+.icono-nav-pedido:hover{
+   transform: scale(1.1);
+    filter: brightness(0.8); 
+}
+.icono-nav-home:hover{
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+.btn-carrito:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #64e06c;
+}
